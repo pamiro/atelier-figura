@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run copy-img",
+    "copy-img": "xcopy /E /I /Y img dist\\img",
     "preview": "vite preview"
   },
   "dependencies": {

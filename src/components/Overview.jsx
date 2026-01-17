@@ -28,10 +28,10 @@ const Overview = () => {
             contact: 'Voor informatie: Ans Hobbelink 06 29317145 of ahobbelink@yahoo.co.uk'
         },
         {
-            title: 'Donderdag',
-            time: '',
-            description: 'Op donderdagavond wordt het atelier gebruikt door een besloten groep',
-            contact: 'meer informatie: Yink Goosen (06-40756550)'
+            title: 'Donderdagavond',
+            time: '20.30 - 22.30',
+            description: 'Naaktmodel, korte standen.\nOp donderdagavond tekent en schildert de Stokverfgroep. Enkele korte standen van 3 en daarna meerdere van 10 minuten',
+            contact: 'Aanmelden of informatie: Yink Goosen (06-40756550)'
         },
         {
             title: 'Vrijdag',
