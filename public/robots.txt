@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://atelier-figura.nl/sitemap.xml
+
+# Block specific paths if needed (none for now)
+# Disallow: /admin/
+# Disallow: /private/
