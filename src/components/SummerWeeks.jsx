@@ -19,16 +19,18 @@ const SummerWeeks = () => {
                             DE TEKENWEEK in 2026
                         </h3>
                         <p className="text-gray-700 mb-4">
-                            Wanneer die plaatsvindt volgt nog nadere informatie.
+                            De tekenweek vindt plaats van maandag 10 augustus tot/met vrijdag 14 augustus 2026.
                         </p>
                         <ul className="space-y-2 text-gray-700">
                             <li>• Tijdens de tekenweek wordt er gewerkt naar een model, in korte standen.</li>
                             <li>• Maximaal 10 à 12 deelnemers.</li>
+                            <li>• Deelname bij voorkeur voor minimaal 3 dagen.</li>
                             <li>• Kosten: € 130 voor de hele week, € 35 voor een dag.</li>
                             <li>• Tijd: 10 – 14.30 uur (ligt nog niet helemaal vast).</li>
                             <li>• Regelmatig zal er een korte onderbreking zijn voor koffie of thee.</li>
                         </ul>
                         <p className="mt-4 text-sm text-gray-600">
+
                             Meer informatie en aanmelden bij Paul Kurstjens: paulkurst@gmail.com
                         </p>
                     </div>

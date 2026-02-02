@@ -10,7 +10,7 @@ const Overview = () => {
             contact: 'Voor aanmelden of informatie: alexonstein@gmail.com'
         },
         {
-            title: 'Dinsdagavond Modeltekenen',
+            title: 'Dinsdagavond: Modeltekenen',
             time: '19:30 — 22:30',
             description: 'Naaktmodel, korte en lange standen\nSchilderen en tekenen. Zes korte standen (10 min) en dan een lange stand van ongeveer 5 kwartier.',
             contact: 'Inlichtingen: ghitavanbergen@gmail.com'
