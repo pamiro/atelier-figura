@@ -11,12 +11,14 @@ const Hero = () => {
 
             {/* Content */}
             <div className="container mx-auto text-center relative z-10">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 drop-shadow-lg">
-                    Figura
-                </h1>
-                <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto drop-shadow-md">
+                <img
+                    src="/img/FiguraInverted.svg"
+                    alt="Figura Logo"
+                    className="mx-auto w-[60%] max-w-2xl lg:max-w-4xl mb-8 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
+                />
+                {/* <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto drop-shadow-md">
                     Atelier Figura: Inloop Atelier in Utrecht
-                </p>
+                </p> */}
             </div>
         </section>
     );

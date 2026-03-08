@@ -12,21 +12,23 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-white shadow-md sticky top-0 z-50">
+        <header className="bg-[#2a2826] border-b border-[#DDBE91] sticky top-0 z-50">
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
-                    {/* Logo */}
-                    <h1 className="text-3xl font-serif font-bold text-primary cursor-pointer"
-                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    {/* Text Logo */}
+                    <span
+                        className="text-2xl md:text-3xl font-bold tracking-[0.05em] text-[#DDBE91] uppercase cursor-pointer select-none"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    >
                         Figura
-                    </h1>
+                    </span>
 
                     {/* Desktop Navigation */}
                     <ul className="hidden md:flex space-x-8">
                         <li>
                             <button
                                 onClick={() => scrollToSection('overzicht')}
-                                className="text-gray-700 hover:text-accent font-medium transition-colors duration-200"
+                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
                             >
                                 Overzicht
                             </button>
@@ -34,7 +36,7 @@ const Header = () => {
                         <li>
                             <button
                                 onClick={() => scrollToSection('zomerweken')}
-                                className="text-gray-700 hover:text-accent font-medium transition-colors duration-200"
+                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
                             >
                                 Zomerweken
                             </button>
@@ -42,7 +44,7 @@ const Header = () => {
                         <li>
                             <button
                                 onClick={() => scrollToSection('contact')}
-                                className="text-gray-700 hover:text-accent font-medium transition-colors duration-200"
+                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
                             >
                                 Contact
                             </button>
@@ -51,7 +53,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-gray-700"
+                        className="md:hidden text-stone-300 hover:text-accent"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Toggle menu"
                     >
@@ -67,11 +69,11 @@ const Header = () => {
 
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
-                    <ul className="md:hidden mt-4 space-y-2">
+                    <ul className="md:hidden mt-4 pb-4 space-y-2">
                         <li>
                             <button
                                 onClick={() => scrollToSection('overzicht')}
-                                className="block w-full text-left py-2 text-gray-700 hover:text-accent font-medium"
+                                className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
                                 Overzicht
                             </button>
@@ -79,7 +81,7 @@ const Header = () => {
                         <li>
                             <button
                                 onClick={() => scrollToSection('zomerweken')}
-                                className="block w-full text-left py-2 text-gray-700 hover:text-accent font-medium"
+                                className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
                                 Zomerweken
                             </button>
@@ -87,7 +89,7 @@ const Header = () => {
                         <li>
                             <button
                                 onClick={() => scrollToSection('contact')}
-                                className="block w-full text-left py-2 text-gray-700 hover:text-accent font-medium"
+                                className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
                                 Contact
                             </button>

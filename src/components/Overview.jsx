@@ -25,7 +25,7 @@ const Overview = () => {
             title: 'Woensdagavond: Het portret',
             time: '19:30 — 22:30',
             description: 'Op woensdagavond wordt er geschilderd of getekend naar portret.',
-            contact: 'Voor informatie: Ans Hobbelink 06 29317145 of ahobbelink@yahoo.co.uk'
+            contact: 'Voor informatie: Ans Hobbelink 0629317145 of ahobbelink@yahoo.co.uk | Ina 0683521660 of glimlach1@gmail.com'
         },
         {
             title: 'Donderdagavond',
@@ -48,14 +48,14 @@ const Overview = () => {
     ];
 
     return (
-        <section id="overzicht" className="py-16 px-4 bg-white">
+        <section id="overzicht" className="py-16 px-4 bg-[#33312f]">
             <div className="container mx-auto">
                 {/* Inloop Atelier Section */}
                 <div className="mb-16">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                    <h2 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-8">
                         Inloop Atelier
                     </h2>
-                    <div className="prose max-w-none text-gray-700 space-y-4">
+                    <div className="prose max-w-none text-stone-300 space-y-4">
                         <p>
                             Tekenen, schilderen of boetseren naar een naakt of portret. Bij Atelier Figura Utrecht aan de Nobeldwarsstraat kun je iedere week tekenen en schilderen naar model. Hieronder zie je wanneer we wat doen. Het is niet nodig om je van tevoren aan te melden, maar bij een enkele activiteit op zondag stellen we dat wel op prijs. Ezels, tekenplanken en -tafels zijn beschikbaar. Het model regelen wij. Teken- en schilderspullen, papier of schildersdoek neem je zelf mee.
                         </p>
@@ -70,10 +70,10 @@ const Overview = () => {
 
                 {/* Schedule Overview */}
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                    <h2 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-8">
                         Overzicht
                     </h2>
-                    <p className="text-gray-700 mb-8">
+                    <p className="text-stone-300 mb-8">
                         Op maandagochtend is er een besloten groep ("Kleurecht").
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

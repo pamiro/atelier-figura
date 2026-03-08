@@ -56,23 +56,23 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-16 px-4 bg-white">
+        <section id="contact" className="py-16 px-4 bg-[#33312f]">
             <div className="container mx-auto">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                <h2 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-8">
                     Contact
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left Column - Address & Map */}
                     <div>
-                        <div className="bg-gray-50 rounded-lg p-8 shadow-md mb-6">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                        <div className="bg-[#33312f] rounded-lg p-8 shadow-md mb-6">
+                            <h3 className="text-xl font-semibold text-stone-200 mb-4">
                                 Atelier Figura
                             </h3>
-                            <p className="text-lg text-gray-700 mb-2">
+                            <p className="text-lg text-stone-300 mb-2">
                                 Nobeldwarsstraat 9, Utrecht
                             </p>
-                            <p className="text-gray-600">
+                            <p className="text-stone-400">
                                 <a href="mailto:pavel@atelier-figura.nl" className="text-accent hover:underline">
                                     pavel@atelier-figura.nl
                                 </a>
@@ -96,15 +96,15 @@ const Contact = () => {
 
                     {/* Right Column - Contact Form */}
                     <div>
-                        <div className="bg-gray-50 rounded-lg p-8 shadow-md">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-6">
+                        <div className="bg-[#33312f] rounded-lg p-8 shadow-md">
+                            <h3 className="text-xl font-semibold text-stone-200 mb-6">
                                 Stuur ons een bericht
                             </h3>
 
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 {/* Name Field */}
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                                    <label htmlFor="name" className="block text-sm font-medium text-stone-300 mb-1">
                                         Naam *
                                     </label>
                                     <input
@@ -121,7 +121,7 @@ const Contact = () => {
 
                                 {/* Email Field */}
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                                    <label htmlFor="email" className="block text-sm font-medium text-stone-300 mb-1">
                                         E-mail *
                                     </label>
                                     <input
@@ -138,7 +138,7 @@ const Contact = () => {
 
                                 {/* Subject Field */}
                                 <div>
-                                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                                    <label htmlFor="subject" className="block text-sm font-medium text-stone-300 mb-1">
                                         Onderwerp
                                     </label>
                                     <input
@@ -154,7 +154,7 @@ const Contact = () => {
 
                                 {/* Message Field */}
                                 <div>
-                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                                    <label htmlFor="message" className="block text-sm font-medium text-stone-300 mb-1">
                                         Bericht *
                                     </label>
                                     <textarea
@@ -169,11 +169,10 @@ const Contact = () => {
                                     />
                                 </div>
 
-                                {/* Submit Button */}
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-accent text-white py-3 px-6 rounded-md font-semibold hover:bg-red-600 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                                    className="w-full bg-accent text-white py-3 px-6 rounded-md font-semibold hover:opacity-90 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
                                 >
                                     {isSubmitting ? 'Verzenden...' : 'Verstuur bericht'}
                                 </button>
