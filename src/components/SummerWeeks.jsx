@@ -42,7 +42,6 @@ const SummerWeeks = () => {
                         </h3>
                         <p className="text-stone-300 mb-4">
                             De schilderweek vindt plaats van maandag 17 augustus tot/met vrijdag 21 augustus 2026.
-                            Elke dag wordt dagelijks gewerkt van 10.00 tot 17.00 uur.
                             De week wordt begeleid door Marga Tupang.
                         </p>
                         <ul className="space-y-2 text-stone-300">
@@ -50,7 +49,7 @@ const SummerWeeks = () => {
                             <li>• Maximaal 10 deelnemers.</li>
                             <li>• Deelname bij voorkeur voor minimaal 3 dagen.</li>
                             <li>• Kosten: € 130 voor de hele week, € 35 voor een dag.</li>
-                            <li>• Tijd: 10 – 14.30 uur (dat voor nu, kan nog veranderen).</li>
+                            <li>• Tijd: 10 – 17.00 uur (dat voor nu, kan nog veranderen).</li>
                             <li>• Lunchpauze: 12 – 12.30 uur</li>
                             <li>• Er zijn korte onderbrekingen voor koffie of thee.</li>
                         </ul>
