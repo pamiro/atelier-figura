@@ -29,7 +29,7 @@ const Overview = () => {
         },
         {
             title: 'Donderdagavond',
-            time: '20.30 - 22.30',
+            time: '20.00 - 22.30',
             description: 'Naaktmodel, korte standen.\nOp donderdagavond tekent en schildert de Stokverfgroep. Enkele korte standen van 3 en daarna meerdere van 10 minuten',
             contact: 'Aanmelden of informatie: Yink Goosen (06-40756550)'
         },

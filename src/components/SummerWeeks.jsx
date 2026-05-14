@@ -41,7 +41,9 @@ const SummerWeeks = () => {
                             DE SCHILDERWEEK in 2026
                         </h3>
                         <p className="text-stone-300 mb-4">
-                            Nadere informatie volgt.
+                            De schilderweek vindt plaats van maandag 17 augustus tot/met vrijdag 21 augustus 2026.
+                            Elke dag wordt dagelijks gewerkt van 10.00 tot 17.00 uur.
+                            De week wordt begeleid door Marga Tupang.
                         </p>
                         <ul className="space-y-2 text-stone-300">
                             <li>• Tijdens de schilderweek wordt er gewerkt aan een model; één stand.</li>
