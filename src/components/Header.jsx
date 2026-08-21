@@ -47,6 +47,14 @@ const Header = () => {
                             </li>
                             <li>
                                 <button
+                                    onClick={() => scrollToSection('galerij')}
+                                    className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
+                                >
+                                    {t('header.nav.gallery', 'Galerij')}
+                                </button>
+                            </li>
+                            <li>
+                                <button
                                     onClick={() => scrollToSection('contact')}
                                     className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
                                 >
@@ -96,6 +104,14 @@ const Header = () => {
                                 className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
                                 {t('header.nav.summerWeeks', 'Zomerweken')}
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('galerij')}
+                                className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
+                            >
+                                {t('header.nav.gallery', 'Galerij')}
                             </button>
                         </li>
                         <li>

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
 import SummerWeeks from './components/SummerWeeks';
+import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
                     <Hero />
                     <Overview />
                     <SummerWeeks />
+                    <Gallery />
                     <Contact />
                 </main>
                 <Footer />

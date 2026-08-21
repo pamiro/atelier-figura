@@ -8,6 +8,7 @@
     "nav": {
       "overview": "Overzicht",
       "summerWeeks": "Zomerweken",
+      "gallery": "Galerij",
       "contact": "Contact"
     },
     "language": {
@@ -23,7 +24,7 @@
   "overview": {
     "inloopTitle": "Inloop Atelier",
     "inloopParagraphs": [
-      "Tekenen, schilderen of boetseren naar een naakt of portret. Bij Atelier Figura Utrecht aan de Nobeldwarsstraat kun je iedere week tekenen en schilderen naar model. Hieronder zie je wanneer we wat doen. Het is niet nodig om je van tevoren aan te melden, maar bij een enkele activiteit op zondag stellen we dat wel op prijs. Ezels, tekenplanken en -tafels zijn beschikbaar. Het model regelen wij. Teken- en schilderspullen, papier of schildersdoek neem je zelf mee.",
+      "Tekenen, schilderen of boetseren naar een levend model, naakt of portret. Bij Atelier Figura Utrecht aan de Nobeldwarsstraat kun je iedere week tekenen en schilderen naar model. Hieronder zie je wanneer we wat doen. Het is niet nodig om je van tevoren aan te melden, maar bij een enkele activiteit op zondag stellen we dat wel op prijs. Ezels, tekenplanken en -tafels zijn beschikbaar. Het model regelen wij. Teken- en schilderspullen, papier of schildersdoek neem je zelf mee.",
       "Wie model kan tekenen, kan alles tekenen, wordt wel beweerd - daar gaan we voor het gemak maar vanuit. Werken naar model is al eeuwenlang de basisvaardigheid in de kunsten. Tijd nemen om te kijken, écht te kijken. Dat kan in ons atelier. Bij Atelier Figura Utrecht staat het model centraal. We bieden een gevarieerd aanbod, van portrettekenen en -schilderen tot modeltekenen, -schilderen en boetseren, van korte standen tot een lange stand. Kom ook eens langs in ons fraaie atelier en maak kennis met bevlogen deelnemers van alle niveaus.",
       "Meedoen kost 18 euro per keer (contant en ter plekke te voldoen). Je kunt ook een 5-rittenkaart kopen voor 75 euro die recht geeft op 5 keer tekenen of schilderen naar keuze. Let op: de rittenkaart is een half jaar geldig."
     ],
@@ -103,6 +104,24 @@
         "Er zijn korte onderbrekingen voor koffie of thee."
       ],
       "contact": "Aanmelden via: alexonstein@gmail.com"
+    }
+  },
+  "gallery": {
+    "title": "Galerij",
+    "subtitle": "Een impressie van het werk gemaakt tijdens de wekelijkse modelteken-, schilder- en boetseersessies bij Atelier Figura.",
+    "items": {
+      "crouchedBlue": "Modelstudie • Houtskool & krijt",
+      "recliningNude": "Liggend naakt • Olieverf",
+      "portraitMan": "Portretstudie • Olieverf",
+      "standingSketch": "Staande figuren • Snelle schets",
+      "claySculptures": "Boetseerzondag • Kleimodellen",
+      "seatedRedChalk": "Modelstudie rug • Rood krijt",
+      "portraitWoman": "Portret • Olieverf op doek",
+      "lineContour": "Lijnstudie • Oost-Indische inkt",
+      "portraitSketch": "Portretschets • Grafiet",
+      "recliningLine": "Korte stand • Inkt & aquarel",
+      "standingInkWash": "Figuur in beweging • Inktwassing",
+      "recliningYellow": "Model in aquarel • Kleurstudie"
     }
   },
   "contact": {

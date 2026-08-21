@@ -8,6 +8,7 @@
     "nav": {
       "overview": "Overview",
       "summerWeeks": "Summer Weeks",
+      "gallery": "Gallery",
       "contact": "Contact"
     },
     "language": {
@@ -103,6 +104,24 @@
         "Regular short breaks for coffee or tea."
       ],
       "contact": "Registration via: alexonstein@gmail.com"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "An impression of artworks created during figure drawing, painting, and sculpting sessions at Atelier Figura.",
+    "items": {
+      "crouchedBlue": "Figure study • Charcoal & chalk",
+      "recliningNude": "Reclining nude • Oil painting",
+      "portraitMan": "Portrait study • Oil painting",
+      "standingSketch": "Standing figures • Quick sketch",
+      "claySculptures": "Sculpting Sunday • Clay models",
+      "seatedRedChalk": "Figure study back • Red chalk",
+      "portraitWoman": "Portrait • Oil on canvas",
+      "lineContour": "Line study • India ink",
+      "portraitSketch": "Portrait sketch • Graphite",
+      "recliningLine": "Short pose • Ink & watercolor",
+      "standingInkWash": "Figure in motion • Ink wash",
+      "recliningYellow": "Model in watercolor • Color study"
     }
   },
   "contact": {
