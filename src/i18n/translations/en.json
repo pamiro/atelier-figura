@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Atelier Figura Utrecht | Figure Drawing, Painting & Portraiture",
+    "description": "Drop-in studio in Utrecht for figure drawing, painting, and portraiture. Weekly sessions Tuesday through Sunday. Nude drawing, portrait painting, and sculpting. Nobeldwarsstraat 9, Utrecht."
+  },
+  "header": {
+    "logoAlt": "Figura",
+    "nav": {
+      "overview": "Overview",
+      "summerWeeks": "Summer Weeks",
+      "contact": "Contact"
+    },
+    "language": {
+      "nl": "NL",
+      "en": "EN",
+      "switchToNl": "Wissel naar Nederlands",
+      "switchToEn": "Switch to English"
+    }
+  },
+  "hero": {
+    "logoAlt": "Figura Logo"
+  },
+  "overview": {
+    "inloopTitle": "Drop-in Studio",
+    "inloopParagraphs": [
+      "Drawing, painting or sculpting from a nude or portrait model. At Atelier Figura Utrecht on Nobeldwarsstraat you can draw and paint from a model every week. Below you can find our weekly schedule. Advance registration is not required, though appreciated for certain Sunday sessions. Easels, drawing boards, and tables are provided. We arrange the model. Please bring your own drawing and painting materials, paper, or canvas.",
+      "It is often said that if you can draw a model, you can draw anything — and we gladly embrace that idea. Working from a live model has been the cornerstone skill in visual arts for centuries. Taking the time to observe, to truly look. That's what you can do in our studio. At Atelier Figura Utrecht, the model is central. We offer a diverse program, from portrait drawing and painting to figure drawing, painting and sculpting, with both short poses and long poses. Come visit our studio and meet passionate participants of all skill levels.",
+      "Participation costs €18 per session (payable in cash on-site). You can also purchase a 5-session pass for €75, valid for 5 drawing or painting sessions of your choice. Please note: the pass is valid for 6 months."
+    ],
+    "scheduleTitle": "Overview",
+    "mondayNotice": "On Monday morning there is a private group (\"Kleurecht\").",
+    "schedule": [
+      {
+        "title": "Tuesday Afternoon: The Portrait",
+        "time": "13:30 — 16:30",
+        "description": "Model portrait\nOn Tuesday afternoons, participants paint or draw portraits from a live model.",
+        "contact": "For registration or information: alexonstein@gmail.com"
+      },
+      {
+        "title": "Tuesday Evening: Figure Drawing",
+        "time": "19:30 — 22:30",
+        "description": "Nude model, short and long poses\nPainting and drawing. Six short poses (10 min) followed by a long pose of approx. 75 minutes.",
+        "contact": "Information: ghitavanbergen@gmail.com"
+      },
+      {
+        "title": "Wednesday Afternoon",
+        "time": "13:30 — 16:00",
+        "description": "Private figure drawing group (no drop-in).\nOn Wednesday afternoon, the studio is used by a private drawing group ('Transarte').",
+        "contact": "More information: Claudia Hoejenbos 030-2322348 or steenroos@gmail.com"
+      },
+      {
+        "title": "Wednesday Evening: The Portrait",
+        "time": "19:30 — 22:30",
+        "description": "On Wednesday evening, participants paint or draw portraits from a live model.",
+        "contact": "For information: Ans Hobbelink 0629317145 or ahobbelink@yahoo.co.uk | Ina 0683521660 or glimlach1@gmail.com"
+      },
+      {
+        "title": "Thursday Evening",
+        "time": "20.00 - 22.30",
+        "description": "Nude model, short poses.\nOn Thursday evening, the Stokverfgroep draws and paints. Several short poses of 3 minutes followed by multiple 10-minute poses.",
+        "contact": "Registration or information: Yink Goosen (06-40756550)"
+      },
+      {
+        "title": "Friday",
+        "time": "13:30 — 16:30",
+        "description": "Nude model, short poses\nPainting and drawing. Short poses from 3 to 10 minutes.",
+        "contact": "Information: Anabel or Geoff (geoffhar@yahoo.com)"
+      },
+      {
+        "title": "Sunday",
+        "time": "10:00 — 17:00",
+        "description": "Painting, drawing, and sculpting Sundays:\n\nEvery 1st or 4th Sunday of the month: Sculpting. Call: Yink Goosen (06-40756550)\n\nEvery 2nd Sunday of the month: Drawing Sunday (short poses). Call or email: Paul Kurstjens 030-2721257 – paulkurst@gmail.com\n\nEvery 3rd Sunday of the month: Painting Sunday (one long pose). For information: alexonstein@gmail.com\n\nPrice: €34.00 for a full day, €18.00 for a half day. Please register in advance.\n\nOn remaining Sundays, the studio is available for other activities that fit our artistic scope (painting, drawing).",
+        "contact": ""
+      }
+    ]
+  },
+  "summerWeeks": {
+    "title": "SUMMER WEEKS",
+    "intro": "Atelier Figura organizes a drawing week and a painting week every summer.",
+    "drawingWeek": {
+      "title": "THE DRAWING WEEK in 2026",
+      "subtitle": "The drawing week will take place from Monday August 10 to Friday August 14, 2026.",
+      "items": [
+        "During the drawing week, work is done from a live model in short poses.",
+        "Maximum 10 to 12 participants.",
+        "Participation preferably for a minimum of 3 days.",
+        "Cost: €130 for the full week, €35 for a single day.",
+        "Time: 10:00 – 14:30 (exact times subject to minor adjustment).",
+        "Regular short breaks for coffee or tea."
+      ],
+      "contact": "More information and registration with Paul Kurstjens: paulkurst@gmail.com"
+    },
+    "paintingWeek": {
+      "title": "THE PAINTING WEEK in 2026",
+      "subtitle": "The painting week will take place from Monday August 17 to Friday August 21, 2026. The week is led by Marga Tupang.",
+      "items": [
+        "During the painting week, participants work on a single model pose throughout.",
+        "Maximum 10 participants.",
+        "Participation preferably for a minimum of 3 days.",
+        "Cost: €130 for the full week, €35 for a single day.",
+        "Time: 10:00 – 17:00 (for now, may be subject to minor change).",
+        "Lunch break: 12:00 – 12:30",
+        "Regular short breaks for coffee or tea."
+      ],
+      "contact": "Registration via: alexonstein@gmail.com"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "studioTitle": "Atelier Figura",
+    "studioAddress": "Nobeldwarsstraat 9, Utrecht",
+    "mapTitle": "Atelier Figura Location",
+    "formTitle": "Send us a message",
+    "labels": {
+      "name": "Name *",
+      "email": "Email *",
+      "subject": "Subject",
+      "message": "Message *"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "subject": "Registration / Question / etc.",
+      "message": "Your message..."
+    },
+    "defaultSubject": "New message from Atelier Figura website",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please try again later or email pavel@atelier-figura.nl"
+  },
+  "footer": {
+    "title": "Atelier Figura",
+    "subtitle": "Painters and Draftsmen",
+    "imageAlt": "Atmospheric impression of Atelier Figura",
+    "stichting": "Stichting Atelier Figura (Non-profit)",
+    "kvkLabel": "Chamber of Commerce (KvK) no.",
+    "kvkNumber": "42139825",
+    "copyright": "© Copyright. All rights reserved."
+  }
+}

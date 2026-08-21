@@ -1,60 +1,57 @@
 import React from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 
 const SummerWeeks = () => {
+    const { t } = useTranslation();
+
+    const drawingItems = t('summerWeeks.drawingWeek.items', []);
+    const paintingItems = t('summerWeeks.paintingWeek.items', []);
+
     return (
         <section id="zomerweken" className="py-16 px-4 bg-[#33312f]">
             <div className="container mx-auto">
                 <h2 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-8">
-                    ZOMERWEKEN
+                    {t('summerWeeks.title', 'ZOMERWEKEN')}
                 </h2>
 
                 <p className="text-stone-300 mb-8">
-                    Er worden bij Atelier Figura iedere zomer een tekenweek en een schilderweek georganiseerd.
+                    {t('summerWeeks.intro', 'Er worden bij Atelier Figura iedere zomer een tekenweek en een schilderweek georganiseerd.')}
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Tekenweek */}
+                    {/* Tekenweek / Drawing Week */}
                     <div className="bg-[#33312f] rounded-lg shadow-md p-8">
                         <h3 className="text-2xl font-sans font-bold text-primary mb-4">
-                            DE TEKENWEEK in 2026
+                            {t('summerWeeks.drawingWeek.title', 'DE TEKENWEEK in 2026')}
                         </h3>
                         <p className="text-stone-300 mb-4">
-                            De tekenweek vindt plaats van maandag 10 augustus tot/met vrijdag 14 augustus 2026.
+                            {t('summerWeeks.drawingWeek.subtitle', 'De tekenweek vindt plaats van maandag 10 augustus tot/met vrijdag 14 augustus 2026.')}
                         </p>
                         <ul className="space-y-2 text-stone-300">
-                            <li>• Tijdens de tekenweek wordt er gewerkt naar een model, in korte standen.</li>
-                            <li>• Maximaal 10 à 12 deelnemers.</li>
-                            <li>• Deelname bij voorkeur voor minimaal 3 dagen.</li>
-                            <li>• Kosten: € 130 voor de hele week, € 35 voor een dag.</li>
-                            <li>• Tijd: 10 – 14.30 uur (ligt nog niet helemaal vast).</li>
-                            <li>• Regelmatig zal er een korte onderbreking zijn voor koffie of thee.</li>
+                            {Array.isArray(drawingItems) && drawingItems.map((item, index) => (
+                                <li key={index}>• {item}</li>
+                            ))}
                         </ul>
                         <p className="mt-4 text-sm text-stone-400">
-
-                            Meer informatie en aanmelden bij Paul Kurstjens: paulkurst@gmail.com
+                            {t('summerWeeks.drawingWeek.contact', 'Meer informatie en aanmelden bij Paul Kurstjens: paulkurst@gmail.com')}
                         </p>
                     </div>
 
-                    {/* Schilderweek */}
+                    {/* Schilderweek / Painting Week */}
                     <div className="bg-[#33312f] rounded-lg shadow-md p-8">
                         <h3 className="text-2xl font-sans font-bold text-primary mb-4">
-                            DE SCHILDERWEEK in 2026
+                            {t('summerWeeks.paintingWeek.title', 'DE SCHILDERWEEK in 2026')}
                         </h3>
                         <p className="text-stone-300 mb-4">
-                            De schilderweek vindt plaats van maandag 17 augustus tot/met vrijdag 21 augustus 2026.
-                            De week wordt begeleid door Marga Tupang.
+                            {t('summerWeeks.paintingWeek.subtitle', 'De schilderweek vindt plaats van maandag 17 augustus tot/met vrijdag 21 augustus 2026. De week wordt begeleid door Marga Tupang.')}
                         </p>
                         <ul className="space-y-2 text-stone-300">
-                            <li>• Tijdens de schilderweek wordt er gewerkt aan een model; één stand.</li>
-                            <li>• Maximaal 10 deelnemers.</li>
-                            <li>• Deelname bij voorkeur voor minimaal 3 dagen.</li>
-                            <li>• Kosten: € 130 voor de hele week, € 35 voor een dag.</li>
-                            <li>• Tijd: 10 – 17.00 uur (dat voor nu, kan nog veranderen).</li>
-                            <li>• Lunchpauze: 12 – 12.30 uur</li>
-                            <li>• Er zijn korte onderbrekingen voor koffie of thee.</li>
+                            {Array.isArray(paintingItems) && paintingItems.map((item, index) => (
+                                <li key={index}>• {item}</li>
+                            ))}
                         </ul>
                         <p className="mt-4 text-sm text-stone-400">
-                            Aanmelden via: alexonstein@gmail.com
+                            {t('summerWeeks.paintingWeek.contact', 'Aanmelden via: alexonstein@gmail.com')}
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -34,7 +36,7 @@ const Contact = () => {
                     to_email: 'pavel@atelier-figura.nl',
                     from_name: formData.name,
                     email: formData.email,
-                    subject: formData.subject || 'Nieuw bericht van Atelier Figura website',
+                    subject: formData.subject || t('contact.defaultSubject', 'Nieuw bericht van Atelier Figura website'),
                     message: formData.message
                 })
             });
@@ -59,7 +61,7 @@ const Contact = () => {
         <section id="contact" className="py-16 px-4 bg-[#33312f]">
             <div className="container mx-auto">
                 <h2 className="text-3xl md:text-4xl font-sans font-bold text-primary mb-8">
-                    Contact
+                    {t('contact.title', 'Contact')}
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -67,10 +69,10 @@ const Contact = () => {
                     <div>
                         <div className="bg-[#33312f] rounded-lg p-8 shadow-md mb-6">
                             <h3 className="text-xl font-semibold text-stone-200 mb-4">
-                                Atelier Figura
+                                {t('contact.studioTitle', 'Atelier Figura')}
                             </h3>
                             <p className="text-lg text-stone-300 mb-2">
-                                Nobeldwarsstraat 9, Utrecht
+                                {t('contact.studioAddress', 'Nobeldwarsstraat 9, Utrecht')}
                             </p>
                             <p className="text-stone-400">
                                 <a href="mailto:pavel@atelier-figura.nl" className="text-accent hover:underline">
@@ -89,7 +91,7 @@ const Contact = () => {
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Atelier Figura Location"
+                                title={t('contact.mapTitle', 'Atelier Figura Location')}
                             ></iframe>
                         </div>
                     </div>
@@ -98,14 +100,14 @@ const Contact = () => {
                     <div>
                         <div className="bg-[#33312f] rounded-lg p-8 shadow-md">
                             <h3 className="text-xl font-semibold text-stone-200 mb-6">
-                                Stuur ons een bericht
+                                {t('contact.formTitle', 'Stuur ons een bericht')}
                             </h3>
 
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 {/* Name Field */}
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-stone-300 mb-1">
-                                        Naam *
+                                        {t('contact.labels.name', 'Naam *')}
                                     </label>
                                     <input
                                         type="text"
@@ -114,15 +116,15 @@ const Contact = () => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition"
-                                        placeholder="Uw naam"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition text-stone-900"
+                                        placeholder={t('contact.placeholders.name', 'Uw naam')}
                                     />
                                 </div>
 
                                 {/* Email Field */}
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-stone-300 mb-1">
-                                        E-mail *
+                                        {t('contact.labels.email', 'E-mail *')}
                                     </label>
                                     <input
                                         type="email"
@@ -131,15 +133,15 @@ const Contact = () => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition"
-                                        placeholder="uw@email.nl"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition text-stone-900"
+                                        placeholder={t('contact.placeholders.email', 'uw@email.nl')}
                                     />
                                 </div>
 
                                 {/* Subject Field */}
                                 <div>
                                     <label htmlFor="subject" className="block text-sm font-medium text-stone-300 mb-1">
-                                        Onderwerp
+                                        {t('contact.labels.subject', 'Onderwerp')}
                                     </label>
                                     <input
                                         type="text"
@@ -147,15 +149,15 @@ const Contact = () => {
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition"
-                                        placeholder="Aanmelding / Vraag / etc."
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition text-stone-900"
+                                        placeholder={t('contact.placeholders.subject', 'Aanmelding / Vraag / etc.')}
                                     />
                                 </div>
 
                                 {/* Message Field */}
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium text-stone-300 mb-1">
-                                        Bericht *
+                                        {t('contact.labels.message', 'Bericht *')}
                                     </label>
                                     <textarea
                                         id="message"
@@ -164,28 +166,28 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         rows="5"
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition resize-none"
-                                        placeholder="Uw bericht..."
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-accent focus:border-accent outline-none transition resize-none text-stone-900"
+                                        placeholder={t('contact.placeholders.message', 'Uw bericht...')}
                                     />
                                 </div>
 
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-accent text-white py-3 px-6 rounded-md font-semibold hover:opacity-90 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                                    className="w-full bg-accent text-stone-900 font-bold py-3 px-6 rounded-md hover:opacity-90 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
                                 >
-                                    {isSubmitting ? 'Verzenden...' : 'Verstuur bericht'}
+                                    {isSubmitting ? t('contact.submitting', 'Verzenden...') : t('contact.submit', 'Verstuur bericht')}
                                 </button>
 
                                 {/* Status Messages */}
                                 {status === 'success' && (
                                     <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-                                        Bedankt! Uw bericht is verzonden.
+                                        {t('contact.success', 'Bedankt! Uw bericht is verzonden.')}
                                     </div>
                                 )}
                                 {status === 'error' && (
                                     <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-                                        Er is iets misgegaan. Probeer het later opnieuw of stuur een email naar pavel@atelier-figura.nl
+                                        {t('contact.error', 'Er is iets misgegaan. Probeer het later opnieuw of stuur een email naar pavel@atelier-figura.nl')}
                                     </div>
                                 )}
                             </form>

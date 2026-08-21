@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from '../i18n/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { t } = useTranslation();
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -20,62 +23,71 @@ const Header = () => {
                         className="text-2xl md:text-3xl font-bold tracking-[0.05em] text-[#DDBE91] uppercase cursor-pointer select-none"
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     >
-                        Figura
+                        {t('header.logoAlt', 'Figura')}
                     </span>
 
-                    {/* Desktop Navigation */}
-                    <ul className="hidden md:flex space-x-8">
-                        <li>
-                            <button
-                                onClick={() => scrollToSection('overzicht')}
-                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
-                            >
-                                Overzicht
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                onClick={() => scrollToSection('zomerweken')}
-                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
-                            >
-                                Zomerweken
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                onClick={() => scrollToSection('contact')}
-                                className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
-                            >
-                                Contact
-                            </button>
-                        </li>
-                    </ul>
+                    {/* Desktop Navigation + Language Switcher */}
+                    <div className="hidden md:flex items-center space-x-8">
+                        <ul className="flex space-x-8 items-center">
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('overzicht')}
+                                    className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
+                                >
+                                    {t('header.nav.overview', 'Overzicht')}
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('zomerweken')}
+                                    className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
+                                >
+                                    {t('header.nav.summerWeeks', 'Zomerweken')}
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('contact')}
+                                    className="text-stone-300 hover:text-accent font-medium transition-colors duration-200"
+                                >
+                                    {t('header.nav.contact', 'Contact')}
+                                </button>
+                            </li>
+                        </ul>
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden text-stone-300 hover:text-accent"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            {isMenuOpen ? (
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                            ) : (
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            )}
-                        </svg>
-                    </button>
+                        <div className="pl-4 border-l border-stone-700">
+                            <LanguageSwitcher />
+                        </div>
+                    </div>
+
+                    {/* Mobile Controls (Language Switcher + Menu Button) */}
+                    <div className="flex md:hidden items-center space-x-3">
+                        <LanguageSwitcher />
+                        <button
+                            className="text-stone-300 hover:text-accent p-1 focus:outline-none"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                {isMenuOpen ? (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                ) : (
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                )}
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
-                {/* Mobile Navigation */}
+                {/* Mobile Navigation Dropdown */}
                 {isMenuOpen && (
-                    <ul className="md:hidden mt-4 pb-4 space-y-2">
+                    <ul className="md:hidden mt-4 pb-4 space-y-2 border-t border-stone-800 pt-3">
                         <li>
                             <button
                                 onClick={() => scrollToSection('overzicht')}
                                 className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
-                                Overzicht
+                                {t('header.nav.overview', 'Overzicht')}
                             </button>
                         </li>
                         <li>
@@ -83,7 +95,7 @@ const Header = () => {
                                 onClick={() => scrollToSection('zomerweken')}
                                 className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
-                                Zomerweken
+                                {t('header.nav.summerWeeks', 'Zomerweken')}
                             </button>
                         </li>
                         <li>
@@ -91,7 +103,7 @@ const Header = () => {
                                 onClick={() => scrollToSection('contact')}
                                 className="block w-full text-left py-2 text-stone-300 hover:text-accent font-medium"
                             >
-                                Contact
+                                {t('header.nav.contact', 'Contact')}
                             </button>
                         </li>
                     </ul>
